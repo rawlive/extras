@@ -62,13 +62,8 @@
   </div> 
    <div style="max-width: 100%; background-color: hsl(0, 0%, 90%);" ng-show="!ultra_full_screen_mode">
         <nav class="navbar navbar-expand-md navbar-dark static-top" id="mesibo_live_main_navbar" style="margin-bottom: 0!important; background-color: #696969; padding: 0!important">
-      <a class="navbar-brand" href="#" style="margin-right: 5px!important">&nbsp;<img width="50px" src="assets/images/mesibo-logo.png">&nbsp; Live</a>
+      <a class="navbar-brand" href="#" style="margin-right: 5px!important">&nbsp;<img width="100px" src="assets/images/mesibo-logo.png">&nbsp; Live</a>
       <span class="connection-indicator" style="width:15px" ng-style ="{'background-color': getStatusIndicator(mesibo_connection_status)}"></span>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-        </ul>
-      </div>
 
       <div ng-cloak="isMesiboConnected()" style="text-align: center; display: inline-block; width: 100%">
               <div style="font-size: 30px">
@@ -422,7 +417,7 @@
                                       <p style="font-size: 15px;color: grey;">Send the following invitation text to people who you want to actively participate in the conference. They will be able to make a video or voice call to the conference. </p>
                                     </div>
 
-                                    <textarea readonly class = "form-control" rows = "10" placeholder = "Join my room" style="font-size: 15px; user-select: none; " id='invite-text-publisher'>Hey,&#13;&#13;{{user.name}} has invited you to join the conference - {{room.name}}.&#13;&#13;To join the conference  - Visit http://3.10.234.232/testapp/live-demo/web/login.html and use the following credentials:.&#13;&#13;Room ID: {{room.gid}} &#13;Pin: {{room.pin}}
+                                    <textarea readonly class = "form-control" rows = "10" placeholder = "Join my room" style="font-size: 15px; user-select: none; " id='invite-text-publisher'>Hey,&#13;&#13;{{user.name}} has invited you to join the conference - {{room.name}}.&#13;&#13;To join the conference  - Visit https://mesibo.com/livedemo and use the following credentials:.&#13;&#13;Room ID: {{room.gid}} &#13;Pin: {{room.pin}}
                                     </textarea>                                
                                     
                                     <div class="mx-auto" style="text-align: center; padding-top: 10px">
@@ -436,7 +431,7 @@
                                       <p style="font-size: 15px;color: grey;">Send the following invitation text to people who you want to silently participate in the conference. <strong>They will not be able to make a call -but they will be able to view the conference</strong>. </p>
                                     </div>
 
-                                    <textarea readonly class = "form-control" rows = "10" placeholder = "Join my room" style="font-size: 15px; user-select: none; " id='invite-text-subscriber'>Hey,&#13;&#13;{{user.name}} has invited you to join the conference - {{room.name}}.&#13;&#13;To join the conference  - Visit http://3.10.234.232/testapp/live-demo/web/login.html and use the following credentials:.&#13;&#13;Room ID: {{room.gid}} &#13;Pin: {{room.spin}}
+                                    <textarea readonly class = "form-control" rows = "10" placeholder = "Join my room" style="font-size: 15px; user-select: none; " id='invite-text-subscriber'>Hey,&#13;&#13;{{user.name}} has invited you to join the conference - {{room.name}}.&#13;&#13;To join the conference  - Visit https://mesibo.com/livedemo and use the following credentials:.&#13;&#13;Room ID: {{room.gid}} &#13;Pin: {{room.spin}}
                                     </textarea>                                
                                     
                                     <div class="mx-auto" style="text-align: center; padding-top:10px">
